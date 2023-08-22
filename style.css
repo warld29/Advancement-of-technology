@@ -44,6 +44,7 @@
   color: white;
   background: black;
 }
+
 .info {
   height: 50vh;
   width: 100%;
@@ -119,167 +120,6 @@
 }
 .info .new p {
   color: white;
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Courier New", Courier, monospace;
-  }
-
-  .heading {
-    height: 20vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  .heading .name {
-    font-size: 35px;
-  }
-
-  .heading .nav-bar ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 12px;
-    gap: 15px;
-  }
-
-  .heading .nav-bar ul li {
-    list-style: none;
-  }
-
-  .heading .nav-bar ul li a {
-    color: gray;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  .info {
-    height: 50vh;
-    width: 100%;
-
-    padding: 0 70px;
-    display: flex;
-    gap: 35px;
-  }
-
-  .info .image-info {
-    height: 100%;
-    width: 60%;
-  }
-
-  .info .image-info .image {
-    padding: 15px;
-  }
-
-  .info .image-info .image img {
-    width: 45rem;
-    object-fit: cover;
-  }
-
-  .info-details {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .info-details .bright h2 {
-    padding: 0 12px;
-    line-height: 35px;
-    font-size: 35px;
-    font-weight: bold;
-    color: rgb(1, 1, 48);
-  }
-
-  .info-details .note p {
-    line-height: 16px;
-  }
-
-  .info-details .note button {
-    margin-top: 12px;
-    padding: 8px 25px;
-    background-color: rgb(207, 56, 81);
-    border: 1px solid rgb(185, 37, 111);
-    color: white;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    letter-spacing: 5px;
-  }
-
-  .info .new {
-    background-color: rgb(1, 1, 48);
-    height: 40rem;
-    width: 30%;
-    margin-top: 1.3rem;
-  }
-
-  .info .new h2 {
-    padding-left: 8px;
-    padding-top: 12px;
-    color: goldenrod;
-    font-size: 25px;
-    font-weight: bold;
-  }
-
-  .info .new h3 {
-    color: white;
-    padding-left: 8px;
-    padding: 12px;
-    font-weight: bold;
-  }
-  .info .new p {
-    color: white;
-    padding-left: 8px;
-    padding: 12px;
-    line-height: 19px;
-  }
-
-  .info .new .line {
-    border-bottom: 0.7px solid white;
-    width: 90%;
-    margin-left: 10px;
-    padding: 7px;
-  }
-
-  .footer {
-    height: 50vh;
-    width: 100%;
-    padding: 0 70px;
-    display: flex;
-    gap: 10px;
-  }
-
-  .footer .retro {
-    display: flex;
-    padding: 15px;
-    padding-top: 300px;
-    gap: 10px;
-  }
-  .footer .retro .retro-image img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-  }
-
-  .footer .retro .retro-text {
-    line-height: 15px;
-  }
-  .footer .retro .retro-text h3 {
-    color: gray;
-    font-size: 20px;
-  }
-
-  .footer .retro .retro-text h4 {
-    padding: 12px 0;
-    font-size: 13px;
-    color: rgb(1, 1, 48);
-  }
-
-  @media screen and (min-width: 620px) {
-  }
-
   padding-left: 8px;
   padding: 12px;
   line-height: 19px;
@@ -326,5 +166,36 @@
   color: rgb(1, 1, 48);
 }
 
-@media screen and (min-width: 620px) {
+@media only screen and (max-width: 620px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    padding-left: 15px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+  .info {
+    display: block;
+  }
+
+  .info .image {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .info-details {
+    width: 550px;
+    height: 2000px;
+  }
 }
