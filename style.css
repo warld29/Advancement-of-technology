@@ -33,8 +33,17 @@
   color: gray;
   text-decoration: none;
   font-weight: bold;
+  display: block;
+  border-radius: 15px;
+  transition: 0.2s;
+  padding: 10px 20px;
+  margin: 0 5px;
 }
 
+.heading .nav-bar ul li a:hover {
+  color: white;
+  background: black;
+}
 .info {
   height: 50vh;
   width: 100%;
