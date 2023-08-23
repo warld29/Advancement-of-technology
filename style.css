@@ -5,7 +5,94 @@
   font-family: "Courier New", Courier, monospace;
 }
 
-.heading {
+/************ START WITH MOBILE-FIRST RESPONSIVE DESIGN *************/
+
+.main-wrapper{
+  width: 90%;
+  /* Feel free to tinker with the max-width */
+  max-width: 900px; 
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************ START YOUR MEDIA QUERIES FOR THE VARIOUS BREAKPOINTS *************/
+
+/* MIN-WIDTH: 480PX (FOR MOBILE PHONES)
+MIN-WIDTH: 768PX (FOR TABLETS)
+MIN-WIDTH: 992PX (FOR LAPTOPS)
+MIN-WIDTH: 1200PX (FOR LARGE DEVICES)
+MIN-WIDTH: 1440PX (FOR EXTRA-LARGE DEVICES)*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .heading {
   height: 20vh;
   width: 100%;
   display: flex;
@@ -198,4 +285,4 @@
     width: 550px;
     height: 2000px;
   }
-}
+} */
