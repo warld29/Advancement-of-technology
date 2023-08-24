@@ -7,31 +7,148 @@
 
 /************ START WITH MOBILE-FIRST RESPONSIVE DESIGN *************/
 
-.main-wrapper{
+.main-wrapper {
   width: 90%;
   /* Feel free to tinker with the max-width */
-  max-width: 900px; 
+  max-width: 900px;
   margin: 0 auto;
 }
 
+@media only screen and (min-width: 480px) {
+  .heading {
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
+  .heading h1 {
+    font-size: 30px;
+  }
+  .nav-bar {
+    display: none;
+  }
 
+  .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
+  .image img {
+    object-fit: cover;
+    height: 300px;
+    width: 432px;
+  }
 
+  .bright h2 {
+    padding: 2rem 0;
+    font-weight: 55rem;
+    font-size: 50px;
+  }
 
+  .note {
+    padding: 10px 0;
+  }
 
+  .note p {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: bold;
+    color: gray;
+    padding-bottom: 12px;
+  }
 
+  .note button {
+    width: 170px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(183, 65, 85);
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+  }
 
+  .info .new {
+    background-color: rgb(1, 1, 48);
+    height: 34rem;
+    width: 100%;
+    margin: 1.3rem 0;
+  }
 
+  .info .new h2 {
+    padding-left: 8px;
+    padding-top: 12px;
+    color: goldenrod;
+    font-size: 27px;
+    font-weight: bold;
+  }
 
+  .info .new h3 {
+    color: white;
+    padding-left: 8px;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .info .new p {
+    color: white;
+    padding-left: 8px;
+    padding: 12px;
+    line-height: 19px;
+    font-size: 15px;
+  }
 
+  .info .new .line {
+    border-bottom: 0.7px solid white;
+    width: 90%;
+    margin-left: 10px;
+    padding: 7px;
+  }
 
+  .footer {
+    width: 100%;
+    min-height: 15vh;
+  }
 
+  .footer .retro {
+    padding: 15px 0;
+    gap: 10px;
+    display: flex;
+  }
+  .footer .retro .retro-image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
 
+  .footer .retro .retro-text {
+    line-height: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .retro .retro-text h3 {
+    color: gray;
+    font-size: 25px;
+    padding-top: 5px;
+  }
 
-
-
-
+  .footer .retro .retro-text h4 {
+    padding: 12px 0;
+    font-size: 21px;
+    color: rgb(1, 1, 48);
+  }
+  .footer .retro .retro-text p {
+    font-size: 20px;
+    line-height: 15px;
+  }
+  .footer .retro .retro-text p:nth-last-child() {
+    line-height: 15px;
+  }
+}
 
 /************ START YOUR MEDIA QUERIES FOR THE VARIOUS BREAKPOINTS *************/
 
@@ -40,57 +157,6 @@ MIN-WIDTH: 768PX (FOR TABLETS)
 MIN-WIDTH: 992PX (FOR LAPTOPS)
 MIN-WIDTH: 1200PX (FOR LARGE DEVICES)
 MIN-WIDTH: 1440PX (FOR EXTRA-LARGE DEVICES)*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* .heading {
   height: 20vh;
@@ -122,7 +188,7 @@ MIN-WIDTH: 1440PX (FOR EXTRA-LARGE DEVICES)*/
   font-weight: bold;
   display: block;
   border-radius: 15px;
-  transition: 0.2s;
+  transition: 0.1s;
   padding: 10px 20px;
   margin: 0 5px;
 }
@@ -254,6 +320,9 @@ MIN-WIDTH: 1440PX (FOR EXTRA-LARGE DEVICES)*/
 }
 
 @media only screen and (max-width: 620px) {
+  body {
+    min-height: 100vh;
+  }
   .hamburger {
     display: block;
     cursor: pointer;
@@ -265,15 +334,10 @@ MIN-WIDTH: 1440PX (FOR EXTRA-LARGE DEVICES)*/
     background-color: black;
     margin: 6px 0;
     padding-left: 15px;
-    display: flex;
-    justify-content: space-around;
   }
 
   .nav-bar {
     display: none;
-  }
-  .info {
-    display: block;
   }
 
   .info .image {
@@ -283,6 +347,13 @@ MIN-WIDTH: 1440PX (FOR EXTRA-LARGE DEVICES)*/
 
   .info-details {
     width: 550px;
-    height: 2000px;
+    height: 200px;
+    margin: 15px auto;
+  }
+
+  .new {
+    width: 100%;
+    margin-top: 15rem;
+    height: 100px;
   }
 } */
