@@ -1,0 +1,122 @@
+/* DIRECTIVES
+* Open the practice.html in your browser
+* Hold ctrl + shift + i to open the browser console
+* Click on the computer icon and make the dimensions responsive
+
+WHAT YOU SHOULD NOTICE
+* In small screens below 400px, this version of .my-boxes is applied:
+.my-boxes{
+    width: inherit;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-items: center;
+}
+
+* Once it goes above 400px, this version of .my-boxes is applied, changing it to two columns:
+.my-boxes{
+    grid-template-columns: repeat(2, 1fr)
+}
+
+And so on... */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* THIS COULD BE THE STYLING FOR THE MOBILE VIEW */
+main{
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.my-boxes{
+    width: inherit;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-items: center;
+}
+
+.box-1, 
+.box-2,
+.box-3,
+.box-4{
+    width: inherit;
+    height: 200px;
+    margin: 1rem 0;
+}
+
+.box-1{
+    background-color: red;
+}
+
+.box-2{
+    background-color: blue;
+}
+
+.box-3{
+    background-color: yellow
+}
+
+.box-4{
+    background-color: green
+}
+
+
+
+
+/* APPLY A MIN-WIDTH MEDIA QUERY OF 400PX
+MEANING: CHANGE THE STYLING OF ANYTHING CONTAINED INSIDE ONCE IT GOES ABOVE 400PX */
+@media only screen and (min-width: 400px) {
+    .my-boxes{
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .box-1, 
+.box-2,
+.box-3,
+.box-4{
+   
+    height: 230px;
+}
+}
+
+
+/* APPLY A MIN-WIDTH MEDIA QUERY OF 700PX
+MEANING: CHANGE THE STYLING OF ANYTHING CONTAINED INSIDE ONCE IT GOES ABOVE 400PX */
+@media only screen and (min-width: 700px) {
+    .my-boxes{
+        grid-template-columns: repeat(3, 1fr)
+    }
+
+    .box-1, 
+.box-2,
+.box-3,
+.box-4{
+   
+    height: 250px;
+}
+}
+
+
+/* APPLY A MIN-WIDTH MEDIA QUERY OF 1200PX
+MEANING: CHANGE THE STYLING OF ANYTHING CONTAINED INSIDE ONCE IT GOES ABOVE 400PX */
+@media only screen and (min-width: 1200px) {
+    .my-boxes{
+        grid-template-columns: repeat(4, 1fr)
+    }
+
+    .box-1, 
+.box-2,
+.box-3,
+.box-4{
+   
+    height: 270px;
+}
+}
